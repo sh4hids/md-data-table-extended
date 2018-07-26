@@ -1,11 +1,11 @@
 {
-  "name": "angular-material-data-table",
-  "version": "0.10.9",
-  "description": "Material Design data table.",
+  "name": "md-data-table-extended",
+  "version": "0.1.0",
+  "description": "Material Design data table for AngularJS.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/daniel-nagy/md-data-table.git"
+    "url": "https://github.com/sh4hids/md-data-table-extended.git"
   },
   "main": "index.js",
   "devDependencies": {
