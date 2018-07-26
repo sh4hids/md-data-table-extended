@@ -47,19 +47,6 @@ Include the `md.data.table` module as a dependency in your application.
 angular.module('myApp', ['ngMaterial', 'md.data.table']);
 ```
 
-#### Using npm and Browserify (or JSPM)
-
-In addition, this package may be installed using npm.
-
-```
-npm install angular-material-data-table --save
-```
-
-You may use Browserify to inject this module into your application.
-
-```javascript
-angular.module('myApp', [require('angular-material-data-table')]);
-```
 
 ## Usage
 
@@ -71,19 +58,19 @@ angular.module('myApp', [require('angular-material-data-table')]);
 
 angular.module('demoApp').controller('sampleController', ['$nutrition', '$scope', function ($nutrition, $scope) {
   'use strict';
-  
+
   $scope.selected = [];
-  
+
   $scope.query = {
     order: 'name',
     limit: 5,
     page: 1
   };
-  
+
   function success(desserts) {
     $scope.desserts = desserts;
   }
-  
+
   $scope.getDesserts = function () {
     $scope.promise = $nutrition.desserts.get($scope.query, success).$promise;
   };
@@ -205,14 +192,14 @@ $scope.editComment = function (event, dessert) {
   // if auto selection is enabled you will want to stop the event
   // from propagating and selecting the row
   event.stopPropagation();
-  
-  /* 
+
+  /*
    * messages is commented out because there is a bug currently
    * with ngRepeat and ngMessages were the messages are always
    * displayed even if the error property on the ngModelController
    * is not set, I've included it anyway so you get the idea
    */
-   
+
   var promise = $mdEditDialog.small({
     // messages: {
     //   test: 'I don\'t like tests!'
