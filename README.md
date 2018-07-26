@@ -29,7 +29,7 @@ A fork-able [Codepen](http://codepen.io/anon/pen/BjvLVJ?editors=1010). Please us
 This package is installable through the Bower package manager.
 
 ```
-bower install angular-material-data-table-extended --save
+bower install md-data-table-extended --save
 ```
 
 In your `index.html` file, include the data table module and style sheet.
